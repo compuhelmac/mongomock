@@ -1,7 +1,9 @@
-[![NPM](https://nodei.co/npm/mongomock.png?downloads=true)](https://nodei.co/npm/mongomock/)
+[![NPM](https://nodei.co/npm/mongomock.png?downloads=true)](https://nodei.co/npm/mongodb-mock/)
 
-mongomock
+mongodb-mock
 =========
+
+Based on [mongomock](https://github.com/AndrewGrachov/mongomock)
 
 mongoDb-native mocking library
 
@@ -16,13 +18,13 @@ You can try a playground [here](http://andrewgrachov.github.io/mongo-query/)
 
 #Install
 ```
-npm install mongomock
+npm install mongodb-test-mock
 ```
 
 #Getting started
 
 ```
-var MongoMock = require('mongomock');
+var MongoMock = require('mongodb-test-mock');
 
 //initial mock data
 var db = {

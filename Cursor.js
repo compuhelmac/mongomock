@@ -58,5 +58,8 @@ Cursor.prototype.toArray = function (callback) {
 	callback(null, docs);
 };
 
+Cursor.prototype.stream = function(options) {
+  return this;
+};
 
 module.exports = Cursor;
