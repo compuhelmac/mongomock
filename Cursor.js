@@ -11,7 +11,14 @@ function map(fields) {
 		return !!fields[key] && fields[key] !== -1;
 	});
 	if(!exclude && !include) {
-		throw 'you can either select fields to include, or select fields to exclude';
+    if(!exclude && !include) {
+      // throw 'you can either select fields to include, or select fields to exclude';
+      fields = {};
+      var keys = Object.keys(fields);
+      var exclude = keys.every(function(key) {
+        return fields[key] === -1;
+      });
+    }
 	}
 	return function(doc) {
 		var mapped = {};
