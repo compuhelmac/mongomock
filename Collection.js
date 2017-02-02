@@ -74,6 +74,10 @@ Collection.prototype.insert = function (doc, options, callback) {
 	callback(null, doc);
 };
 
+Collection.prototype.insertOne = function (doc, options, callback) {
+	this.insert(doc, options, callback);
+};
+
 Collection.prototype.update = function (query, modifier, options, callback) {
 	if ('function' === typeof options) {
 		callback = options, options = {};
